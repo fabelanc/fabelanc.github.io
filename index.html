@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>龙王传说漫画-龙王传说漫画全集在线阅读指南</title>
+    <meta name="description" content="龙王传说漫画全集在线阅读指南，为您提供龙王传说漫画的剧情介绍、主要角色、阅读顺序、精彩看点与常见问题解答，帮助您快速了解这部热门少年热血漫画。">
+    <meta name="keywords" content="龙王传说漫画,龙王传说,龙王传说漫画在线,龙王传说漫画阅读,龙王传说漫画全集">
+    <style>
+        /* ==== 基础重置与全局变量 ==== */
+        :root {
+            --primary: #0b4b8a;
+            --primary-light: #1a6bc4;
+            --primary-dark: #062c50;
+            --accent: #f0a500;
+            --accent-light: #ffc247;
+            --bg: #f5f7fb;
+            --card-bg: #ffffff;
+            --text-main: #1f2a36;
+            --text-soft: #4a5b6a;
+            --border-light: #e1e8f0;
+            --shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+            --radius: 16px;
+            --section-space: 60px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            color: var(--primary-light);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        a:hover {
+            color: var(--primary);
+        }
+
+        img, svg {
+            max-width: 100%;
+            display: block;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* ==== 页面头部 ==== */
+        .site-header {
+            background-color: var(--primary-dark);
+            padding: 12px 0;
+            border-bottom: 3px solid var(--accent);
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 10px 0;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .brand-icon {
+            font-size: 2rem;
+            line-height: 1;
+            color: var(--accent);
+        }
+
+        .brand-text {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: #ffffff;
+            letter-spacing: 1px;
+        }
+
+        .brand-text span {
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        .site-tagline {
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.75);
+            margin-top: 2px;
+            letter-spacing: 0.5px;
+        }
+
+        .header-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 20px;
+        }
+
+        .header-nav a {
+            color: rgba(255,255,255,0.9);
+            font-size: 0.95rem;
+            font-weight: 500;
+            padding: 6px 0;
+            border-bottom: 2px solid transparent;
+        }
+        .header-nav a:hover {
+            color: var(--accent-light);
+            border-bottom-color: var(--accent);
+        }
+
+        /* ==== 首屏 Hero ==== */
+        .hero {
+            background: linear-gradient(135deg, #062c50 0%, #0b4b8a 70%, #1a6bc4 100%);
+            color: white;
+            padding: 70px 0 80px;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 6px solid var(--accent);
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            right: -80px;
+            top: -80px;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(240,165,0,0.3) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 2.6rem;
+            font-weight: 800;
+            line-height: 1.3;
+            margin-bottom: 18px;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            letter-spacing: 1px;
+        }
+
+        .hero h1 .accent-text {
+            color: var(--accent-light);
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 30px;
+            max-width: 680px;
+            line-height: 1.8;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background-color: var(--accent);
+            color: #062c50;
+            box-shadow: 0 4px 14px rgba(240,165,0,0.4);
+        }
+        .btn-primary:hover {
+            background-color: var(--accent-light);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(240,165,0,0.5);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: white;
+            border: 2px solid rgba(255,255,255,0.6);
+        }
+        .btn-outline:hover {
+            border-color: white;
+            background-color: rgba(255,255,255,0.1);
+        }
+
+        /* ==== 通用区块 ==== */
+        .section {
+            padding: var(--section-space) 0;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--primary-dark);
+            margin-bottom: 12px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-subtitle {
+            color: var(--text-soft);
+            margin-bottom: 40px;
+            max-width: 700px;
+            font-size: 1.05rem;
+        }
+
+        .section-divider {
+            width: 80px;
+            height: 4px;
+            background: var(--accent);
+            border-radius: 4px;
+            margin-bottom: 30px;
+        }
+
+        /* ==== 卡片网格 ==== */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            padding: 28px 24px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-light);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+            border-color: var(--primary-light);
+        }
+
+        .card-icon {
+            font-size: 2.4rem;
+            margin-bottom: 16px;
+            color: var(--primary);
+        }
+
+        .card h3 {
+            font-size: 1.3rem;
+            color: var(--primary-dark);
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: var(--text-soft);
+            font-size: 0.95rem;
+        }
+
+        /* ==== 主角介绍 ==== */
+        .character-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .character-item {
+            background: white;
+            border-radius: 14px;
+            padding: 20px;
+            border-left: 5px solid var(--primary);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+        }
+
+        .character-item h4 {
+            font-size: 1.1rem;
+            color: var(--primary-dark);
+            margin-bottom: 6px;
+        }
+
+        .character-item .role-tag {
+            display: inline-block;
+            background: var(--accent);
+            color: #062c50;
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 2px 10px;
+            border-radius: 30px;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+        }
+
+        .character-item p {
+            color: var(--text-soft);
+            font-size: 0.9rem;
+            margin-bottom: 0;
+        }
+
+        /* ==== 步骤 / 阅读指南 ==== */
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+            counter-reset: step-counter;
+            margin-top: 10px;
+        }
+
+        .step-item {
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            padding: 30px 20px 25px;
+            position: relative;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-light);
+        }
+
+        .step-item::before {
+            counter-increment: step-counter;
+            content: counter(step-counter);
+            position: absolute;
+            top: -15px;
+            left: 20px;
+            background: var(--primary);
+            color: white;
+            font-weight: 800;
+            font-size: 1.2rem;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+
+        .step-item h3 {
+            font-size: 1.15rem;
+            color: var(--primary-dark);
+            margin-bottom: 10px;
+            margin-top: 8px;
+        }
+
+        .step-item p {
+            font-size: 0.93rem;
+            color: var(--text-soft);
+        }
+
+        /* ==== 精彩看点 / 特色列表 ==== */
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 18px;
+        }
+
+        .feature-item {
+            background: white;
+            border-radius: 12px;
+            padding: 20px 22px;
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+            border: 1px solid var(--border-light);
+        }
+
+        .feature-icon {
+            font-size: 1.8rem;
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+
+        .feature-text h4 {
+            color: var(--primary-dark);
+            font-size: 1.05rem;
+            margin-bottom: 6px;
+        }
+
+        .feature-text p {
+            color: var(--text-soft);
+            font-size: 0.92rem;
+            margin: 0;
+        }
+
+        /* ==== 阅读提示 / 注意事项 ==== */
+        .notice-box {
+            background: #fffbf0;
+            border-left: 6px solid var(--accent);
+            border-radius: 12px;
+            padding: 28px 30px;
+            margin-top: 20px;
+            box-shadow: var(--shadow);
+        }
+
+        .notice-box h3 {
+            color: var(--primary-dark);
+            font-size: 1.3rem;
+            margin-bottom: 16px;
+        }
+
+        .notice-box ul {
+            padding-left: 20px;
+            display: grid;
+            gap: 12px;
+        }
+
+        .notice-box li {
+            font-size: 0.98rem;
+            color: var(--text-main);
+        }
+
+        .notice-box li strong {
+            color: var(--primary-dark);
+        }
+
+        /* ==== FAQ ==== */
+        .faq-list {
+            display: grid;
+            gap: 14px;
+        }
+
+        .faq-item {
+            background: var(--card-bg);
+            border-radius: 12px;
+            border: 1px solid var(--border-light);
+            padding: 20px 24px;
+            transition: box-shadow 0.2s;
+        }
+
+        .faq-item:hover {
+            box-shadow: var(--shadow);
+        }
+
+        .faq-question {
+            font-weight: 700;
+            font-size: 1.05rem;
+            color: var(--primary-dark);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            line-height: 1.4;
+        }
+
+        .faq-question::before {
+            content: "Q.";
+            color: var(--accent);
+            font-weight: 800;
+            font-size: 1.2rem;
+        }
+
+        .faq-answer {
+            color: var(--text-soft);
+            padding-left: 30px;
+            font-size: 0.95rem;
+            border-left: 2px solid var(--border-light);
+            margin-left: 8px;
+            padding-top: 4px;
+            padding-bottom: 2px;
+        }
+
+        .faq-answer strong {
+            color: var(--primary);
+        }
+
+        /* ==== CTA 区域 ==== */
+        .cta-banner {
+            background: linear-gradient(120deg, var(--primary-dark), var(--primary));
+            padding: 50px 30px;
+            border-radius: var(--radius);
+            text-align: center;
+            color: white;
+            margin: 40px 0;
+        }
+
+        .cta-banner h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            font-weight: 800;
+        }
+
+        .cta-banner p {
+            color: rgba(255,255,255,0.85);
+            font-size: 1.05rem;
+            max-width: 600px;
+            margin: 0 auto 25px;
+        }
+
+        .cta-banner .btn {
+            background-color: white;
+            color: var(--primary-dark);
+        }
+        .cta-banner .btn:hover {
+            background-color: var(--accent-light);
+        }
+
+        /* ==== 相关主题 ==== */
+        .related-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .related-tag {
+            background: white;
+            border: 1px solid var(--border-light);
+            padding: 8px 18px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            color: var(--primary);
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+
+        .related-tag:hover {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        /* ==== 页脚 ==== */
+        .site-footer {
+            background: var(--primary-dark);
+            color: rgba(255,255,255,0.8);
+            padding: 40px 0 30px;
+            margin-top: 50px;
+            border-top: 4px solid var(--accent);
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .footer-brand {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 8px;
+        }
+
+        .footer-desc {
+            max-width: 320px;
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.65);
+            line-height: 1.6;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links h4 {
+            color: white;
+            font-size: 1rem;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .footer-links ul {
+            list-style: none;
+            display: grid;
+            gap: 6px;
+        }
+
+        .footer-links a {
+            color: rgba(255,255,255,0.7);
+            font-size: 0.9rem;
+        }
+        .footer-links a:hover {
+            color: var(--accent-light);
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.5);
+        }
+
+        /* ==== 响应式 ==== */
+        @media (max-width: 992px) {
+            .card-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .hero h1 {
+                font-size: 2.1rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 12px;
+            }
+            .header-nav {
+                width: 100%;
+                justify-content: flex-start;
+                overflow-x: auto;
+                padding-bottom: 4px;
+            }
+            .hero {
+                padding: 50px 0 60px;
+            }
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .section {
+                padding: 45px 0;
+            }
+            .section-title {
+                font-size: 1.7rem;
+            }
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+            .feature-list {
+                grid-template-columns: 1fr;
+            }
+            .cta-banner h2 {
+                font-size: 1.5rem;
+            }
+            .footer-content {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 16px;
+            }
+            .hero-actions {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .btn {
+                text-align: center;
+            }
+            .step-item {
+                padding: 25px 18px 20px;
+            }
+            .faq-answer {
+                padding-left: 10px;
+            }
+        }
+    </style>
+    
+    <!-- 指定的头部脚本 -->
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+    <!-- 网站头部 -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <div class="brand-icon">🐉</div>
+                <div>
+                    <div class="brand-text">龙王传说<span>漫画</span></div>
+                    <div class="site-tagline">热血少年 · 龙王觉醒 · 斗罗传奇</div>
+                </div>
+            </div>
+            <nav class="header-nav">
+                <a href="#intro">漫画简介</a>
+                <a href="#characters">主要角色</a>
+                <a href="#guide">阅读指南</a>
+                <a href="#highlights">精彩看点</a>
+                <a href="#faq">常见问题</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- 首屏 Hero 区域 -->
+        <section class="hero">
+            <div class="container hero-content">
+                <h1>龙王传说<span class="accent-text">漫画</span>全集在线阅读指南</h1>
+                <p>欢迎来到龙王传说漫画专题页。这里是帮助您快速了解这部人气少年漫画的起点，涵盖剧情脉络、核心角色、正确阅读顺序以及读者最关心的问题，让你的龙王之旅更顺畅。</p>
+                <div class="hero-actions">
+                    <a href="#guide" class="btn btn-primary">📖 快速开始阅读</a>
+                    <a href="#characters" class="btn btn-outline">⭐ 认识主要角色</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 漫画简介 -->
+        <section id="intro" class="section">
+            <div class="container">
+                <div class="section-divider"></div>
+                <h2 class="section-title">龙王传说漫画：一个关于成长与热血的故事</h2>
+                <p class="section-subtitle">龙王传说漫画改编自同名网络小说，讲述了一个在斗罗大陆背景下发生的全新传奇。对于刚接触这部作品的朋友，以下信息可以帮助你快速建立认知。</p>
+                
+                <div class="card-grid">
+                    <article class="card">
+                        <div class="card-icon">📜</div>
+                        <h3>故事背景</h3>
+                        <p>故事设定在一个充满魂力和魂兽的奇幻世界。在这里，魂师是至高无上的职业，而我们的主角唐舞麟则从一名普通的少年开始，逐渐揭开自己身上与龙王相关的惊天秘密。</p>
+                    </article>
+                    <article class="card">
+                        <div class="card-icon">🔥</div>
+                        <h3>核心看点</h3>
+                        <p>龙王传说漫画在延续斗罗系列世界观的基础上，加入了全新的“魂导器”与“机甲”元素。主角唐舞麟的成长之路充满艰辛与挑战，他与伙伴之间的羁绊、与古月娜之间细腻的情感，都是故事的重要看点。</p>
+                    </article>
+                    <article class="card">
+                        <div class="card-icon">🎯</div>
+                        <h3>漫画特点</h3>
+                        <p>漫画以其流畅的战斗分镜和鲜明的人物刻画吸引了大量读者。相比于文字小说，漫画的视觉化呈现让宏大的魂兽、机甲与武魂融合技更加生动直观，非常适合初次接触该故事的读者。</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 主要角色介绍 -->
+        <section id="characters" class="section" style="background-color: #eef2f7;">
+            <div class="container">
+                <div class="section-divider"></div>
+                <h2 class="section-title">主要角色一览</h2>
+                <p class="section-subtitle">了解这些关键人物，能更好地享受龙王传说漫画的剧情魅力。</p>
+                
+                <div class="character-grid">
+                    <div class="character-item">
+                        <span class="role-tag">主角</span>
+                        <h4>唐舞麟</h4>
+                        <p>天赋异禀的少年，拥有蓝银草武魂，却蕴含金龙王的血脉。性格坚韧而善良，为了守护所爱之人不断变强。</p>
+                    </div>
+                    <div class="character-item">
+                        <span class="role-tag">女主角</span>
+                        <h4>古月娜</h4>
+                        <p>神秘而强大的银发少女，与唐舞麟之间有着说不清道不明的宿命联系，身份疑云是贯穿故事的重要线索。</p>
+                    </div>
+                    <div class="character-item">
+                        <span class="role-tag">伙伴</span>
+                        <h4>谢邂</h4>
+                        <p>唐舞麟在学院结识的挚友之一，性格活泼，擅长使用光龙匕，是团队中不可或缺的敏捷型魂师。</p>
+                    </div>
+                    <div class="character-item">
+                        <span class="role-tag">导师</span>
+                        <h4>舞长空</h4>
+                        <p>史莱克学院的老师，为人高冷且实力深不可测，对唐舞麟的成长给予了重要的指导与保护。</p>
+                    </div>
+                    <div class="character-item">
+                        <span class="role-tag">伙伴</span>
+                        <h4>许小言</h4>
+                        <p>温柔而坚定的女孩，擅长冰属性的魂技，在团队中扮演着控制与支援的重要角色。</p>
+                    </div>
+                    <div class="character-item">
+                        <span class="role-tag">重要角色</span>
+                        <h4>老唐</h4>
+                        <p>寄宿在唐舞麟体内的神秘存在，与金龙王的力量有着千丝万缕的联系，常常在关键时刻出现。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 阅读步骤指南 -->
+        <section id="guide" class="section">
+            <div class="container">
+                <div class="section-divider"></div>
+                <h2 class="section-title">如何正确阅读龙王传说漫画</h2>
+                <p class="section-subtitle">无论是想从头开始追更，还是想回顾经典片段，明确阅读顺序能让体验更佳。</p>
+                
+                <div class="steps">
+                    <div class="step-item">
+                        <h3>了解世界观</h3>
+                        <p>本作是《斗罗大陆》系列的一部分。虽然故事相对独立，但了解魂师、魂环、魂兽等基础设定，能更快融入剧情。</p>
+                    </div>
+                    <div class="step-item">
+                        <h3>从第一话开始</h3>
+                        <p>漫画剧情环环相扣，唐舞麟的每一次蜕变都源于早期的积累。强烈建议从第1话开始按顺序阅读，不要跳章。</p>
+                    </div>
+                    <div class="step-item">
+                        <h3>关注番外与特典</h3>
+                        <p>除了主线剧情，部分单行本或平台会收录番外篇，补充角色的日常生活与幕后故事，让角色形象更立体。</p>
+                    </div>
+                    <div class="step-item">
+                        <h3>配合原著小说</h3>
+                        <p>如果对某些细节感到好奇，可以结合同名小说阅读。小说在心理描写和设定细节上更为详实，能解答部分漫画中简化的内容。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 精彩看点 + 注意事项 -->
+        <section id="highlights" class="section" style="background-color: #eef2f7;">
+            <div class="container">
+                <div class="section-divider"></div>
+                <h2 class="section-title">龙王传说漫画的精彩看点</h2>
+                <p class="section-subtitle">为什么这部漫画能吸引众多读者？以下特点功不可没。</p>
+                
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <div class="feature-icon">⚔️</div>
+                        <div class="feature-text">
+                            <h4>酣畅淋漓的战斗</h4>
+                            <p>漫画将魂技与机甲结合的场面描绘得极具冲击力，每一场重要战斗都张力十足。</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🌱</div>
+                        <div class="feature-text">
+                            <h4>主角成长线</h4>
+                            <p>从弱小的少年到顶天立地的龙王，唐舞麟的成长历程充满挫折与感动，代入感极强。</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">💞</div>
+                        <div class="feature-text">
+                            <h4>细腻的情感描写</h4>
+                            <p>无论是友情、师生情还是唐舞麟与古月娜之间克制的感情线，都刻画得非常动人。</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">✨</div>
+                        <div class="feature-text">
+                            <h4>宏大的世界观</h4>
+                            <p>继承了斗罗的设定并进行扩展，魂导器与机甲的出现让整个世界的格局更加复杂有趣。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 阅读注意事项/提醒 -->
+                <div class="notice-box">
+                    <h3>📌 阅读小提醒</h3>
+                    <ul>
+                        <li><strong>正版渠道优先：</strong>为了支持作者与漫画团队，建议在官方授权的漫画平台或应用上阅读龙王传说漫画。</li>
+                        <li><strong>更新时间：</strong>漫画通常为周更或双周更，具体时间会因平台而异，关注官方动态可以获得第一手更新通知。</li>
+                        <li><strong>剧情进度：</strong>漫画改编自小说，有时会为了叙事节奏进行合理改编，与原著稍有出入是正常现象，可将其视为另一种体验。</li>
+                        <li><strong>理性讨论：</strong>在社区交流剧情时，尊重不同观点，避免剧透未读章节，保持友好的讨论氛围。</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 常见问题 FAQ -->
+        <section id="faq" class="section">
+            <div class="container">
+                <div class="section-divider"></div>
+                <h2 class="section-title">龙王传说漫画常见问题解答</h2>
+                <p class="section-subtitle">整理了一些新读者常会问到的问题，希望能帮你扫清疑惑。</p>
+                
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question">龙王传说漫画和斗罗大陆其他系列有关联吗？</div>
+                        <div class="faq-answer">有的。龙王传说漫画是《斗罗大陆》系列的第三部，故事发生在《绝世唐门》之后。虽然时间线有继承，但剧情相对独立，即使没看过前作也能直接阅读本作。不过，了解前作设定会获得更多彩蛋和联动惊喜。</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">这部漫画的主线剧情是什么？</div>
+                        <div class="faq-answer">主线围绕拥有金龙王血脉的少年唐舞麟展开。他进入史莱克学院学习，在成长过程中结识伙伴，对抗邪恶势力，并逐渐探寻自己与龙王传说之间的宿命联系。故事中后期会涉及更庞大的阴谋与位面战争。</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">漫画目前完结了吗？一共有多少话？</div>
+                        <div class="faq-answer">龙王传说漫画目前的状态会随连载进度而变化。由于连载平台和版本不同，章节数会有差异。建议在官方漫画平台查看最新的目录，那里能获取最准确的更新状态与总话数信息。</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">没有看过小说，直接看漫画能看懂吗？</div>
+                        <div class="faq-answer">完全可以。漫画在改编时已经充分考虑了独立阅读的体验，对背景设定和人物关系都有清晰的交代。如果看完漫画对某个角色特别感兴趣，再回头补小说也是不错的选择。</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">漫画的画风怎么样？适合什么年龄段的读者？</div>
+                        <div class="faq-answer">漫画的画风属于典型的少年热血漫画风格，人物线条清晰，战斗场景流畅，色彩运用富有张力。内容包含战斗和成长主题，适合青少年及以上的读者，整体风格积极向上。</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 简单的 CTA 区域（引导阅读） -->
+        <div class="container">
+            <div class="cta-banner">
+                <h2>准备好开启龙王传说之旅了吗？</h2>
+                <p>从唐舞麟的第一次觉醒开始，见证一位少年如何背负龙王之名，守护他所在乎的一切。现在就前往官方漫画平台，加入这场热血冒险吧！</p>
+                <a href="#intro" class="btn">👆 重温漫画简介</a>
+            </div>
+        </div>
+
+        <!-- 相关主题推荐 -->
+        <section class="section" style="padding-top: 0;">
+            <div class="container">
+                <h2 class="section-title" style="font-size: 1.6rem;">你可能还想了解</h2>
+                <div class="related-tags">
+                    <span class="related-tag">斗罗大陆漫画</span>
+                    <span class="related-tag">绝世唐门漫画</span>
+                    <span class="related-tag">唐舞麟</span>
+                    <span class="related-tag">古月娜</span>
+                    <span class="related-tag">龙王传说小说</span>
+                    <span class="related-tag">少年热血漫画</span>
+                    <span class="related-tag">机甲魂师</span>
+                    <span class="related-tag">国漫推荐</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 网站页脚 -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <div class="footer-brand">龙王传说漫画 阅读指南</div>
+                    <p class="footer-desc">一个专注于提供龙王传说漫画相关资讯与阅读帮助的小站，致力于让每一位读者都能更轻松地享受好故事。</p>
+                </div>
+                <div class="footer-links">
+                    <div>
+                        <h4>内容导航</h4>
+                        <ul>
+                            <li><a href="#intro">漫画简介</a></li>
+                            <li><a href="#characters">主要角色</a></li>
+                            <li><a href="#guide">阅读指南</a></li>
+                            <li><a href="#faq">常见问题</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>相关推荐</h4>
+                        <ul>
+                            <li><a href="#">斗罗系列</a></li>
+                            <li><a href="#">唐家三少作品</a></li>
+                            <li><a href="#">国漫热点</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                © 2025 龙王传说漫画阅读指南 · 仅供学习交流 · 支持正版漫画
+            </div>
+        </div>
+    </footer>
+
+</body>
+                  </html>
